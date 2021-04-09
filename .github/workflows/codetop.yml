@@ -16,12 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: http
-        env:
-          MY_VAR: Hi there! My name is
-          FIRST_NAME: Mona
-          MIDDLE_NAME: The
-          LAST_NAME: Octocat
         run: |
-          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
-          curl 'https://oapi.dingtalk.com/robot/send?access_token=0471c091acf1d9dfc553e57525f57139859858b905836b8f45b228e6d6e3a289' -H 'Content-Type: application/json' -d '{ "msgtype": "markdown", "markdown": { "text": "# ${{ github.actor }} 打卡成功..", "title": "打卡成功..: "} }'
+          curl 'https://oapi.dingtalk.com/robot/send?access_token=0471c091acf1d9dfc553e57525f57139859858b905836b8f45b228e6d6e3a289' -H 'Content-Type: application/json' -d '{ "msgtype": "markdown", "markdown": { "text": "# 打卡成功. \n ### User: ${{ github.actor }} \n ### Sha: ${{ github.sha }}", "title": "打卡成功... "} }'
     
