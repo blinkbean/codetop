@@ -17,5 +17,5 @@ jobs:
     steps:
       - name: http
         run: |
-          curl 'https://oapi.dingtalk.com/robot/send?access_token=0471c091acf1d9dfc553e57525f57139859858b905836b8f45b228e6d6e3a289' -H 'Content-Type: application/json' -d '{ "msgtype": "markdown", "markdown": { "text": "# 打卡成功. \n ### User: ${{ github.actor }} \n ### Sha: ${{ github.sha }}", "title": "打卡成功... "} }'
+          curl 'https://oapi.dingtalk.com/robot/send?access_token=9136bbe769399276035302f248141747e2d39b9a5d8c961a5dfee0c1ebf4fd9f' -H 'Content-Type: application/json' -d '{ "msgtype": "markdown", "markdown": { "text": "# 打卡成功. \n ### User: ${{ github.actor }} \n ### Sha: ${{ github.sha }}", "title": "打卡成功... "} }'
     
