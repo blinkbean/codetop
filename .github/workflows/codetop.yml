@@ -23,5 +23,5 @@ jobs:
           LAST_NAME: Octocat
         run: |
           echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
-          curl 'https://oapi.dingtalk.com/robot/send?access_token=0471c091acf1d9dfc553e57525f57139859858b905836b8f45b228e6d6e3a289' -H 'Content-Type: application/json' -d '{ "msgtype": "markdown", "markdown": { "text": "# alive_proxy: Sip DEV", "title": "打卡成功: "} }'
+          curl 'https://oapi.dingtalk.com/robot/send?access_token=0471c091acf1d9dfc553e57525f57139859858b905836b8f45b228e6d6e3a289' -H 'Content-Type: application/json' -d '{ "msgtype": "markdown", "markdown": { "text": "# alive_proxy: Sip DEV..", "title": "打卡成功..: "} }'
     
